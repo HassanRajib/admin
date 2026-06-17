@@ -23,10 +23,11 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
+  SidebarSeparator,
 } from "./ui/sidebar";
 import Link from "next/link";
 import Image from "next/image";
-import { DropdownMenu, DropdownMenuTrigger } from "./ui/dropdown-menu";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "./ui/dropdown-menu";
 
 const items = [
   {
@@ -59,7 +60,7 @@ const items = [
 const AppSidebar = () => {
   return (
     <Sidebar collapsible="icon">
-      <SidebarHeader>
+      <SidebarHeader className="py-4">
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton asChild>
@@ -71,6 +72,7 @@ const AppSidebar = () => {
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarHeader>
+      <SidebarSeparator/>
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>Deshboard</SidebarGroupLabel>
@@ -99,6 +101,11 @@ const AppSidebar = () => {
               <User2/> User Name <ChevronUp className="ml-auto"/>
                 </SidebarMenuButton>
               </DropdownMenuTrigger>
+              <DropdownMenuContent align="end">
+                <DropdownMenuItem>account</DropdownMenuItem>
+                <DropdownMenuItem>Setting</DropdownMenuItem>
+                <DropdownMenuItem>Log out</DropdownMenuItem>
+              </DropdownMenuContent>
             </DropdownMenu>
           </SidebarMenuItem>
         </SidebarMenu>
