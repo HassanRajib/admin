@@ -17,6 +17,7 @@ import {
   SidebarContent,
   SidebarFooter,
   SidebarGroup,
+  SidebarGroupAction,
   SidebarGroupContent,
   SidebarGroupLabel,
   SidebarHeader,
@@ -60,6 +61,7 @@ const items = [
 const AppSidebar = () => {
   return (
     <Sidebar collapsible="icon">
+      
       <SidebarHeader className="py-4">
         <SidebarMenu>
           <SidebarMenuItem>
@@ -73,6 +75,10 @@ const AppSidebar = () => {
         </SidebarMenu>
       </SidebarHeader>
       <SidebarSeparator/>
+{/* //--------------------------------------------------------------------------------------//
+//                                         menu                                         //
+//--------------------------------------------------------------------------------------// */}
+
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>Deshboard</SidebarGroupLabel>
@@ -91,7 +97,22 @@ const AppSidebar = () => {
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
+        {/* //--------------------------------------------------------------------------------------//
+//                                        action                                        //
+//--------------------------------------------------------------------------------------// */}
+        <SidebarGroup>
+          <SidebarGroupLabel>Menus</SidebarGroupLabel>
+          <SidebarGroupAction>
+            <Plus/> <span className="sr-only">add menu</span>
+          </SidebarGroupAction>
+        </SidebarGroup>
       </SidebarContent>
+      {/* //--------------------------------------------------------------------------------------//
+//                                                                                      //
+//                                        footer                                        //
+//                                                                                      //
+//--------------------------------------------------------------------------------------// */}
+
       <SidebarFooter>
         <SidebarMenu>
           <SidebarMenuItem>
