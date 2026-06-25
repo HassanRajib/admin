@@ -1,3 +1,5 @@
+"use client"
+
 import CardList from "@/components/CardList";
 import EditUser from "@/components/EditUser";
 import { Badge } from "@/components/ui/badge";
@@ -50,7 +52,7 @@ const SingleUserpage = () => {
                 <HoverCardTrigger>
                   <BadgeCheck
                     size={36}
-                    className="rounded-full bg-blue-500/30 border-1 border-blue-500/50 p-2"
+                    className="rounded-full bg-blue-500/30 border border-blue-500/50 p-2"
                   />
                 </HoverCardTrigger>
                 <HoverCardContent>
@@ -64,7 +66,7 @@ const SingleUserpage = () => {
                 <HoverCardTrigger>
                   <Shield
                     size={36}
-                    className="rounded-full bg-green-800/30 border-1 border-green-800/50 p-2"
+                    className="rounded-full bg-green-800/30 border border-green-800/50 p-2"
                   />
                 </HoverCardTrigger>
                 <HoverCardContent>
@@ -79,7 +81,7 @@ const SingleUserpage = () => {
                 <HoverCardTrigger>
                   <Candy
                     size={36}
-                    className="rounded-full bg-yellow-500/30 border-1 border-yellow-500/50 p-2"
+                    className="rounded-full bg-yellow-500/30 border border-yellow-500/50 p-2"
                   />
                 </HoverCardTrigger>
                 <HoverCardContent>
@@ -93,7 +95,7 @@ const SingleUserpage = () => {
                 <HoverCardTrigger>
                   <Citrus
                     size={36}
-                    className="rounded-full bg-orange-500/30 border-1 border-orange-500/50 p-2"
+                    className="rounded-full bg-orange-500/30 border border-orange-500/50 p-2"
                   />
                 </HoverCardTrigger>
                 <HoverCardContent>
